@@ -1,0 +1,23 @@
+---
+layout: default
+title: Home
+image: /assets/image.png
+category: index
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+  <div class="post-listing">
+    <h1 class="post-listing-title">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        {{ post.title }}
+      </a>
+    </h1>
+    <span class="post-listing-date">{{ post.date | date_to_string }}</span>
+    <span class="post-listing-tags">{{ post.tags | array_to_sentence_string }}</span>
+  </div>
+  {% endfor %}
+  <div class="footer">
+    <a href={{ site.homepage }}>Homepage</a>
+  </div>
+</div>

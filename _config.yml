@@ -1,0 +1,24 @@
+exclude: ['README.md']
+permalink: /:title/
+
+title: Today I Learned
+description: An example description
+url: 'http://til.example.com'
+google_analytics: 'UA-XXXXXXXX-X'
+
+author: example
+homepage: 'https://example.com'
+twitter:
+  username: example
+
+social:
+  name: Your Name
+  links:
+    - https://twitter.com/example
+    - https://github.com/example
+    - https://www.linkedin.com/in/example/
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
